@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class HW_YuliaK_FindElements {
+public class HomeWorkYuliaKrasFindElements {
 
     WebDriver driver;
 
