@@ -64,9 +64,35 @@ public class FindElementTest {
        //driver.findElement(By.cssSelector("[href^=\'icon.svg\']"));
         //start->$
         driver.findElement(By.cssSelector("[href$='search']"));
-
+        //tag+id
+        driver.findElement(By.cssSelector("input#city"));
+        //tag+class
+        driver.findElement(By.cssSelector("div.mobile-header"));
 
 
     }
+    //         //*[@attr='value']
+
+    @Test
+    public void findElementByXpath(){
+        //id->xpath //*[@id='xpath']
+        //driver.findElement(By.xpath("//input[@id='city']"));
+        driver.findElement(By.xpath("//*[@id='city']"));
+    driver.findElement(By.xpath("//h2[text()='Type your data and hit Yalla!']"));
+    driver.findElement(By.xpath("//h2[.='Type your data and hit Yalla!']"));
+    driver.findElement(By.xpath("//label[starts-with(@for,'ci')]"));
+    //move up
+    driver.findElement(By.xpath("//a[@class='navigation-link']/.."));
+    //parent
+    driver.findElement(By.xpath("//h1/parent::*"));
+    driver.findElement(By.xpath("//h1/.."));
+    //ancestor
+        driver.findElement(By.xpath("//h1/ancestor::div[2]"));//2 options
+        driver.findElement(By.xpath("//h1/ancestor::div"));// uniqe locator
+        driver.findElement(By.xpath("//h1/ancestor::*"));// all
+        driver.findElement(By.xpath("//h1/following-sibling::form"));
+    }
+
+
 }
 //input-container

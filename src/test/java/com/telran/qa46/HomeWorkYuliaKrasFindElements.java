@@ -27,6 +27,33 @@ public class HomeWorkYuliaKrasFindElements {
     }
 
     @Test
+    public void FindElementsByXpath(){
+        driver.findElement(By.xpath("//img[@alt='Tricentis Demo Web Shop']"));
+        driver.findElement(By.xpath("//div[position()=2]"));
+        driver.findElement(By.xpath("//div[@class='header-logo']"));
+        driver.findElement(By.xpath("//li[@class='inactive']"));
+        driver.findElement(By.xpath("//li[@class='inactive'][2]"));
+        driver.findElement(By.xpath("(//input[@id='newsletter-email'])[1]"));
+        driver.findElement(By.xpath("//h3[following-sibling::text()]"));
+        driver.findElement(By.xpath("//h3[text()='Customer service']"));
+        driver.findElement(By.xpath("//h3[.='Customer service']"));
+        driver.findElement(By.xpath("//h3[last()][starts-with(text(),'My account')]"));
+        driver.findElement(By.xpath("//div[child::h3]"));
+        driver.findElement(By.xpath("//h2/parent::*"));
+        driver.findElement(By.xpath("//img[contains(@alt,'Picture of Build your own cheap computer')]"));
+        driver.findElement(By.xpath("//a[ancestor::body][2]"));
+        driver.findElement(By.xpath("//input[@value='1']"));
+
+
+
+
+
+
+
+
+    }
+
+    @Test
 
     public void FinfElementSimpleLocators(){
         driver.findElement(By.className("header-logo"));
