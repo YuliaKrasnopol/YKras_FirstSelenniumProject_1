@@ -1,4 +1,4 @@
-package com.telran.qa46;
+package com.FirstSelenniumProject_1.models;
 
 public class User {
 private String name;
