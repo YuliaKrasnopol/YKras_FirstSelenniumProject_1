@@ -35,7 +35,7 @@ public class UserHelper extends BaseHelper{
     }
 
     public void fillLoginForm(User test1234$) {
-        type(By.name("Email"), "Yulia1@gmail.co");
+        type(By.name("Email"), "Yulia1@gmail.com");
         type(By.name("Password"), "Yulia12345$");
     }
 
