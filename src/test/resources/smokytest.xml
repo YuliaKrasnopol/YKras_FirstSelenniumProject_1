@@ -3,7 +3,6 @@
 <suite name="Suite2" verbose="1">
     <test name="Suite2">
         <classes>
-            <class name="com.telran.qa46.LoginPositiveTests"/>
             <class name="com.telran.qa46.AddItemToCartTest"/>
         </classes>
     </test>
