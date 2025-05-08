@@ -35,12 +35,17 @@ public class UserHelper extends BaseHelper{
     }
 
     public void fillLoginForm(User test1234$) {
-        type(By.name("Email"), "Yulia1@gmail.com");
+        type(By.name("Email"), "Yulia1@gmail.co");
         type(By.name("Password"), "Yulia12345$");
     }
 
     public void clickOnLoginLink(String cssSelector) {
         click(By.cssSelector(cssSelector));
+    }
+
+    public boolean isErrorMessagePresent(){
+        return isElementPresent(By.xpath("//div[@class='validation-summary-errors']"));
+
     }
 
     public boolean isLogoutPresent() {
